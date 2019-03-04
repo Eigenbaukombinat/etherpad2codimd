@@ -1,6 +1,6 @@
 # Script to migrate a pad from etherpad to codimd, preserving its speaking name in the URL.
 
-:::danger
+:::warn
 This is currently untested as we have not yet installed our codimd instance.
 :::
 
