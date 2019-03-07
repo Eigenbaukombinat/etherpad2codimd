@@ -1,7 +1,5 @@
 # Script to migrate a pad from etherpad-lite to codimd, preserving its speaking name in the URL.
 
-| WARNING: This is currently untested as we have not yet installed our codimd instance! |
-| --- |
 
 ## Installation
 
