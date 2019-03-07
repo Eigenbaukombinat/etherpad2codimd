@@ -1,6 +1,9 @@
 ETHERPAD_BASE = 'https://url_to_your_etherpad'
 CODIMD_BASE = 'https://url_to_your_codimd'
-CODIMD_LOGIN = 'codimd_login_email'
+
+# To use codimd without login, set CODIMD_LOGIN = None
+CODIMD_LOGIN = 'username'
+
 CODIMD_PASSWORD = 'codimd_login_pass'
 PG_HOST = 'postgresql_host'
 PG_USER = 'postgres_user'
