@@ -73,20 +73,13 @@ if CODIMD_LOGIN is not None:
 else:
 	codimd_getter = requests
 result = codimd_getter.get(new_url)
-
-
 check_result(new_url, result)
 
-# for now, print the result
-
-print(new_pad_content)
-
-
-
 # set content in db
+log.info('Saving new content for {} in DB.'.format(padname))
 cursor = db_conn.cursor()
 cursor.execute('UPDATE "Notes" set content = %s where alias = %s', (
-	pad_content, pad_name))
+	new_pad_content, pad_name))
 db_conn.commit()
 cursor.close()
 db_conn.close()
